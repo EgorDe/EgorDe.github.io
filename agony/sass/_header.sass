@@ -1,0 +1,73 @@
+.header
+    min-height: 100vh
+    align-content: stretch
+    display: flex
+    flex-direction: column
+    owerflow: hidden
+    justify-content: space-between
+    padding: 0
+    position: relative
+    z-index: 30
+    .navbar
+        flex: 0 1 auto
+        padding-top: 1.5rem
+        &-body
+            padding: 0
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            li
+                list-style: none
+
+
+    .hero
+        flex: 1 1 auto
+        color: #fff
+        display: flex
+        margin-top: 8rem
+        text-align: center
+        &-title
+            img
+                width: 350px
+        
+        &-img
+            img
+                width: 150px
+
+.pod
+    margin-top: 8rem
+    color: #fff
+    text-align: center
+    font-size: 12px
+    flex: 0 1 auto
+    margin-bottom: 2rem
+
+    img
+        width: 40px
+    a
+        text-transform: none
+        font-size: 16px
+    a:hover
+        color: #fff
+    
+    &-down
+        margin-top: 2rem
+
+
+
+@media(max-width: 498px)
+    .header
+        height: 100vh
+        .hero
+            &-title
+                img
+                    width: 250px
+        
+            &-img
+                img
+                    width: 130px
+               
+                
+
+            
+

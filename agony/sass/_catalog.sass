@@ -1,0 +1,138 @@
+.catalog
+    min-height: 100vh
+    owerflow: hidden
+
+    &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center
+        margin-top: 7rem
+        &__item
+            flex-basis: 27%
+            text-align: center
+
+            img
+                width: 90%
+                padding: 0rem
+
+            h3
+                font-size: 16px
+                
+                color: #000000
+                text-transform: uppercase
+                font-weight: 800
+
+    .navbar_two
+        
+        width: 100%
+        top: 0
+        left: 0
+        position: relative
+        z-index: 10
+    
+
+        &-body
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: relative
+            z-index: 15
+            padding: 2rem 0rem
+
+            .textlogo
+                width: 200px
+            &__list
+                display: block
+                position: relative
+                z-index: 6
+                li
+                    list-style: none
+            &__link
+                margin: 0rem 0rem
+                a
+                    padding: 1rem
+
+
+
+            &__menu
+                position: absolute
+                top: 60px
+                left: -100%
+                width: 50%
+                height: 100%
+                margin: 5rem 3rem
+                z-index: 5
+                owerflow: auto
+                transition: all 0.3s ease 0s
+                background-color: #000
+
+            &__burger
+                display: block
+                position: relative
+                width: 30px
+                height: 20px
+                span
+                    background-color: #000000
+                    position: absolute
+                    width: 60%
+                    height: 2px
+                    left: 0
+                    top: 9px
+                    transition: all 0.3s ease 0s
+
+            &__burger:hover
+                cursor: pointer
+
+            &__burger::before, &__burger::after
+                content: ''
+                background-color: #000000
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                transition: all 0.3s ease 0s
+
+            &__burger::before 
+                top: 0  
+            &__burger::after
+                bottom: 0
+                width: 80%
+
+body.lock
+    owerflow: hidden
+.navbar_two-body__burger.active::before
+    transform: rotate(45deg)
+    top: 9px
+
+.navbar_two-body__burger.active::after
+    transform: rotate(-45deg)
+    width: 100%
+    bottom: 9px
+
+.navbar_two-body__burger.active
+    span
+        transform: scale(0)
+.navbar_two-body__menu.active
+    position: absolute
+    top: 5rem
+    left: 0
+    text-align: left
+
+
+@media(max-width: 991px)
+    .catalog
+        &-block
+            &__item
+                flex-basis: 45%
+
+@media(max-width: 498px)
+    .catalog
+        .navbar_two
+            &-body
+                .textlogo
+                    width: 120px
+        &-block
+            margin-top: 3rem
+            &__item
+                flex-basis: 100%
