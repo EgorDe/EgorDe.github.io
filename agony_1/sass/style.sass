@@ -1,0 +1,52 @@
+//базовые настройки сетки
+@import 'grid'
+
+// первый блок сайта
+@import 'header'
+
+// каталог сайта
+@import 'catalog'
+// контакты сайта
+@import 'contacts'
+@import 'preloader'
+//Шрифт 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap")
+
+
+
+*,
+*:before,
+*:after 
+    box-sizing: border-box
+    outline: none !important
+
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: "Montserrat", sans-serif;
+    color: #5a5b5f
+
+a
+    font-size: 12px
+    color: #ffffff
+    transition: 0.4s linear
+    text-decoration: none
+    text-transform: uppercase
+
+a:hover 
+    text-decoration: none
+    transform: scale(1.05)
+    color: grey
+    cursor: pointer
+    transition: 0.5s
+
+::-webkit-scrollbar
+    width: 5px
+    background-color: #000
+::-webkit-scrollbar-track
+    background-color: #000 
+::-webkit-scrollbar-thumb
+    background-color: #212121 
+    
