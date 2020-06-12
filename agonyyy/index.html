@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Agony</title>
+  <link rel="shortcut icon" href="img/ikon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="js/animate.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+  <div id="page_preloader" class="preloader">
+    <div class="loader">
+      <img src="img/preload.gif" alt="AGONY" />
+    </div>
+  </div>
+  <header class="header" data-vide-bg="video/mainfonn" data-vide-options="loop: true, muted: true, position: 0% 0%">
+    <!--<header class="header">-->
+    <div class="navbar">
+      <div class="container">
+        <ul class="navbar-body">
+          <li><a href="#catalog" class="navbar-body__link">Shop</a></li>
+          <li><a href="#" class="navbar-body__link">Gallery</a></li>
+          <li>
+            <a href="contacts.html" class="navbar-body__link">Contacts</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="container">
+        <div class="hero-img"><img src="img/mainlogo.png" alt="AGONY" /></div>
+        <h1 class="hero-title">
+          <img src="img/Main_logotip.png" alt="AGONY CLOTHES" class="textlogo" />
+        </h1>
+      </div>
+    </div>
+    <div class="pod">
+      <a href="#catalog"> [ Start Shopping ]</a>
+      <div class="pod-down animated fadeInDown infinite slow">
+        <a href="#catalog">
+          <img src="img/down.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="catalog section" id="catalog">
+    <div class="navbar_two">
+      <div class="container">
+        <div class="navbar_two-body">
+          <div class="navbar_two-body__burger">
+            <span></span>
+          </div>
+          <nav class="navbar_two-body__menu">
+            <ul class="navbar_two-body__list">
+              <li><a href="#" class="navbar_two-body__link">Shop</a></li>
+              <li><a href="#" class="navbar_two-body__link">Gallery</a></li>
+              <li>
+                <a href="contacts.html" class="navbar_two-body__link">Contacts</a>
+              </li>
+
+            </ul>
+          </nav>
+          <a href="#"><img src="img/Main_logotip_black.png" alt="AGONY CLOTHES" class="textlogo" /></a>
+          <a href="#"><img src="img/bag.png" alt="bag" class="bag" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="catalog-block">
+        <a href="product.html">
+          <div class="catalog-block__item">
+            <img src="img/sweater.png" alt="" />
+            <h3>Sweater "Baby Devil"</h3>
+            <span>5.000RUB</span>
+
+          </div>
+        </a>
+        <a href="product.html">
+          <div class="catalog-block__item">
+            <img src="img/sweater.png" alt="" />
+            <h3>Sweater "Baby Devil"</h3>
+            <span>5.000RUB</span>
+
+          </div>
+        </a>
+        <a href="product.html">
+          <div class="catalog-block__item">
+            <img src="img/sweater.png" alt="" />
+            <h3>Sweater "Baby Devil"</h3>
+            <span>5.000RUB</span>
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/jquery.vide.min.js"></script>
+
+  <!--Библиотека jQuery-->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!--Готовый скрипт корзины-->
+  <script defer src="https://lk.easynetshop.ru/frontend/v5/ens-ca7c838b.js"></script>
+
+  <!--Стили элементов для корзины-->
+  <link href="https://lk.easynetshop.ru/frontend/v5/ens-ca7c838b.css" rel="stylesheet">
+  <script>
+    document.addEventListener("EasyNetShopLoaded", function (event) {
+      // Устанавливаем изображение. Указываем адрес загруженной на сайт картинки 
+      ens_jQuery('#enscart_image_wrapper').html('<img src="https://i.ibb.co/ZfJ03Ns/shop1.png">');
+    }, false);
+  </script>
+
+  <style>
+    #enscart_wrapper {
+      text-align: center;
+      padding-right: 11rem;
+      /*Выровнять иконку корзины по центру */
+    }
+
+    #enscart_image_wrapper {
+      background: transparent;
+      box-shadow: none;
+
+      /* Изменить фон кнопки */
+
+    }
+
+    #enscart_image_wrapper img {
+      height: 70%;
+      /* Подогнать размер изображения под кнопку */
+      width: auto;
+      padding-top: 8px;
+    }
+  </style>
+</body>
+
+</html>

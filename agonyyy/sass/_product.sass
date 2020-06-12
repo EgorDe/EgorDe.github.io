@@ -1,0 +1,86 @@
+
+.product
+    &-block
+        flex: 1 1 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center 
+        margin-top: 0
+        &__item
+            flex-basis: 50%
+            
+            
+
+        .name_product
+            font-size: 35px
+            color: #000000
+            text-transform: uppercase
+            font-weight: 600
+        span 
+            font-size: 20px
+            color: #000000
+            text-transform: uppercase
+            font-weight: 600
+            padding-top: -5rem
+        p
+            color: #000
+    
+.carusel
+    width: 100%
+    display: block
+    margin-left: 10rem
+    
+.btn_black
+    padding: 1rem 2rem
+    text-transform: uppercase
+    background-color: #272727
+    border: #272727 solid
+    color: #fff
+    font-weight: 600
+.btn_black:hover
+    transition: 0.4s linear
+    cursor: pointer
+    background-color: transparent
+    color: #272727
+    transition: 0.5s
+.btn_wh
+    padding: 1rem 2rem
+    text-transform: uppercase
+    background-color: transparent
+    border: #272727 solid
+    color: #272727
+    font-weight: 600
+.btn_wh:hover
+    transition: 0.4s linear
+    cursor: pointer
+    background-color: #272727
+    color: #fff
+    transition: 0.5s
+
+
+
+@media(max-width: 1024px)
+    .carusel
+        margin: 0rem
+
+@media(max-width: 768px)
+    .product-block__item
+        text-align: center
+        margin-top: 2rem
+@media(max-width: 498px)
+    .product-block__item
+        margin-top: 2rem
+        flex-basis: 100%
+        .name_product
+            font-size: 20px
+        span 
+            font-size: 15px    
+        p
+            text-align: center
+        button
+            margin-bottom: 1rem
+        .btn_black
+            padding: 0.5rem 1rem
+        .btn_wh
+            padding: 0.5rem 1rem

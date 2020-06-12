@@ -1,0 +1,75 @@
+.navbar_two
+        
+    width: 100%
+    top: 0
+    left: 0
+    position: relative
+    z-index: 10
+    
+
+    &-body
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        z-index: 15
+        padding: 2rem 0rem
+
+        .textlogo
+            width: 150px
+        &__list
+            display: block
+            position: relative
+            z-index: 6
+            li
+                list-style: none
+        &__link
+            margin: 0rem 0rem
+            a
+                padding: 1rem
+
+
+
+        &__menu
+            position: absolute
+            top: 30px
+            left: -100%
+            width: 30%
+            height: 100%
+            margin: -3rem 3rem
+            z-index: 5
+            owerflow: auto
+            transition: all 0.4s ease 0s
+            background-color: #000
+
+        &__burger
+            display: block
+            position: relative
+            width: 30px
+            height: 20px
+            span
+                background-color: #000000
+                position: absolute
+                width: 60%
+                height: 2px
+                left: 0
+                top: 9px
+                transition: all 0.3s ease 0s
+
+        &__burger:hover
+            cursor: pointer
+
+        &__burger::before, &__burger::after
+            content: ''
+            background-color: #000000
+            position: absolute
+            width: 100%
+            height: 2px
+            left: 0
+            transition: all 0.3s ease 0s
+
+        &__burger::before 
+            top: 0
+        &__burger::after
+            bottom: 0
+            width: 80%
